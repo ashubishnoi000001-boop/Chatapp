@@ -13,11 +13,27 @@
         --color-lightblu: #2B353EB2;
         --leading-128: 128%;  
         --leading-162: 162%;
+        --leading-115:115%;
         --color-lightgry:#2B353E;
-        --color-rating:rgba(43, 53, 62, 0.7);
         --color-shadow:#2B353E26;
 
         --shadow-custom: 0px 20px 75px 0px var(--color-shadow);
+        
+        /* Custom font sizes */
+        --text-custom-13: 13px;
+        --text-custom-15: 15px;
+        --text-custom-21: 21px;
+        --text-custom-26: 26px;
+        --text-custom-36: 36px;
+        --text-custom-34: 34px;
+        --text-custom-40: 40px;
+        --text-custom-45: 45px;
+        --text-custom-52: 52px;
+        --text-custom-64: 64px;
+        --text-custom-75: 75px;
+
+        --font-Poppins:"Poppins", sans-serif;
+        --font-Roboto:"Roboto", sans-serif;
       }
     </style>
 
@@ -30,24 +46,17 @@
             list-style-type: none;
             text-decoration: none;
         }
-
-        .Poppins {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .Roboto {
-            font-family: "Roboto", sans-serif;
-        }
     </style>
 </head>
 
 <body>
     <section class="section-hero w-full bg-mlu">
-        <div class="container-hero w-full max-w-[1440px] mx-auto p-[30px_20px_160px]">
+        <div class="container-hero w-full max-w-[1440px] mx-auto p-[30px_20px_160px] max-lg:pb-20">
             <div class="frame-1 max-w-[1160px] w-full flex flex-col gap-[134px] mx-auto ">
                 <nav class="relative flex w-full items-center justify-between">
                     <a href="#">
-                        <p class="loggo Poppins text-[26px] font-semibold leading-[115%] tracking-[-0.52px] text-white">
+                        <p
+                            class="loggo font-Poppins text-custom-26 font-semibold leading-115 tracking-[-0.52px] text-white">
                             chat
                             <span class="loggo-spn font-[275]">app</span>
                         </p>
@@ -60,28 +69,28 @@
                     <!-- desktop screen -->
                     <ul class="nav-list hidden md:flex items-center gap-[30px] ">
                         <li class="relative">
-                            <a href="#product" class="Roboto text-sm font-medium leading-none text-white 
+                            <a href="#product" class="font-Roboto text-sm font-medium leading-none text-white 
                                 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full ">Product</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#services" class="Rroboto text-sm font-medium leading-none text-white
+                            <a href="#services" class="font-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Services</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#contact" class="Roboto text-sm font-medium leading-none text-white
+                            <a href="#contact" class="font-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Contact</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#login" class="Roboto text-sm font-medium leading-none text-white
+                            <a href="#login" class="font-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Log In</a>
@@ -89,7 +98,7 @@
 
                         <li>
                             <button
-                                class="cursor-pointer rounded-[210px] border border-white/20 bg-white/20 px-6 py-3 Roboto text-sm font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
+                                class="cursor-pointer rounded-[210px] bg-white/20 px-6 py-3 font-Roboto text-sm font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
                                 Try it Free </button>
                         </li>
                     </ul>
@@ -100,35 +109,35 @@
                         class="fixed inset-0 z-40 flex h-screen w-full translate-x-full flex-col items-center justify-center gap-8 bg-mlu text-white transition-transform duration-300 peer-checked:translate-x-0 md:hidden">
 
                         <li class="relative">
-                            <a href="#product" class="Roboto text-sm font-medium leading-none text-white 
+                            <a href="#product" class="font-Roboto text-sm font-medium leading-none text-white 
                                 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full ">Product</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#services" class="Rroboto text-sm font-medium leading-none text-white
+                            <a href="#services" class="Rfont-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Services</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#contact" class="Roboto text-sm font-medium leading-none text-white
+                            <a href="#contact" class="font-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Contact</a>
                         </li>
 
                         <li class="relative">
-                            <a href="#login" class="Roboto text-sm font-medium leading-none text-white
+                            <a href="#login" class="font-Roboto text-sm font-medium leading-none text-white
                              before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
                                 before:bg-white before:content-[''] before:transition-all before:duration-300 before:ease-in
                                 hover:before:w-full">Log In</a>
                         </li>
 
                         <button
-                            class="cursor-pointer rounded-[210px] border border-white/20 bg-white/20 px-6 py-3 Roboto text-sm font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
+                            class="cursor-pointer rounded-[210px] bg-white/20 px-6 py-3 font-Roboto text-sm font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
                             Try it Free </button>
                     </ul>
 
@@ -146,22 +155,22 @@
                 <div class="content-1 flex items-center max-lg:flex-col content-center mx-auto gap-[76px] w-full">
                     <div class="head-1 w-full max-w-[499px] max-xl:items-center ">
                         <h1
-                            class="head-txt Poppins text-white font-semibold leading-128 text-[52px] tracking-[-2%] xl:text-[75px] md:text-[64px]  max-lg:text-center">
+                            class="head-txt font-Poppins text-white font-semibold leading-128 max-md:text-custom-52 tracking-[-2%] text-custom-75 max-xl:text-custom-64  max-lg:text-center">
                             Have your
                             best chat</h1>
                         <p
-                            class=" para-txt mt-5 Roboto text-lg font-normal leading-none text-white sm:text-[21px] max-lg:text-center">
+                            class=" para-txt mt-5 font-Roboto text-lg font-normal leading-none text-white max-sm:text-custom-21 max-lg:text-center">
                             Fast, easy & unlimited team chat.</p>
 
                         <div
                             class="btn-box mt-[60px] max-md:mt-8 flex flex-wrap flex-row gap-9 max-sm:gap-5 max-lg:justify-center">
                             <button
-                                class="btn-1 cursor-pointer rounded-[60px] border border-mlu bg-white py-4 px-12 Roboto text-base font-medium leading-none text-mlu transition-all duration-[280ms] hover:border-white hover:bg-mlu hover:text-white ">
+                                class="btn-1 cursor-pointer rounded-[60px] border border-mlu bg-white py-4 px-12 font-Roboto text-base font-medium leading-none text-mlu transition-all duration-[280ms] hover:border-white hover:bg-mlu hover:text-white ">
                                 Try it Free
                             </button>
 
                             <button
-                                class="btn-2 cursor-pointer rounded-[60px] border border-white bg-mlu pt-[14px] pr-[43px] pb-[17px] pl-12 Roboto text-base font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
+                                class="btn-2 cursor-pointer rounded-[60px] border border-white bg-mlu pt-[14px] pr-[43px] pb-[17px] pl-12 font-Roboto text-base font-medium leading-none text-white transition-all duration-[280ms] hover:bg-white hover:text-mlu">
                                 Get a Demo
                             </button>
                         </div>
@@ -176,29 +185,39 @@
     </section>
 
     <section class="section-1 w-full">
-        <div class="container w-full max-w-[1440px] mx-auto p-[90px_20px_180px]">
+        <div
+            class="container w-full max-w-[1440px] mx-auto p-[90px_20px_180px] max-lg:p-[80px_20px_80px] max-md:p-[60px_20px_60px]">
             <p
-                class="Poppins text-center text-darkblu leading-128 font-medium text-base text-[36px] xl:text-[45px] md:text-[40px]">
+                class="font-Poppins text-center text-darkblu leading-128 font-medium text-base text-custom-36 xl:text-custom-45 md:text-custom-40">
                 Instant Team Chats
             </p>
-            <div class="txt-box pt-[30px] mx-auto max-w-[566px]">
-                <p class="Roboto text-center text-lightblu leading-162 font-normal text-[16px] sm:text-[18px]">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam
-                    felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa.
-                </p>
-            </div>
+            <p
+                class="font-Roboto text-center text-lightblu leading-162 font-normal text-base sm:text-lg pt-[30px] mx-auto max-w-[566px]">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa.
+            </p>
 
-            <div class="img-2 w-full pt-[60px]">
-                <img class="mx-auto shadow-custom " width="1061" height="663" src="./assets/img/middle.jpg"
-                    alt="middle-section img">
+            <div class="relative mx-auto w-full max-w-[1061px] px-4 pt-10 sm:pt-[60px] z-0">
+                <img class="absolute left-0 top-8 z-1
+               w-[15%] max-w-[159px] h-auto
+               pointer-events-none" width="159px" height="150px" src="./assets/img/top of middle img.png"
+                    alt="silver dot">
+                <img class=" absolute right-0 bottom-8 z-1 w-[15%] max-w-[159px] h-auto
+               pointer-events-none" width="159px" height="150px" src="./assets/img/right bottom of middle img.png"
+                    alt="gold dot">
+
+
+                <img class=" shadow-custom relative z-10 mx-auto block w-full max-w-[962px] h-auto" width="962px"
+                    height="631px" src="./assets/img/middle section.png" alt="middle-section img">
             </div>
         </div>
     </section>
 
     <section class="section-2 w-full  bg-lightbackground">
-        <div class="container w-full max-w-[1440px] mx-auto p-[124px_0px_137px] max-xl:p-[124px_20px_137px]">
+        <div
+            class="container w-full max-w-[1440px] mx-auto p-[124px_0px_137px] max-xl:p-[124px_20px_137px] max-lg:p-[80px_20px_80px] max-md:p-[60px_20px_60px]">
 
             <div class="frame-1 flex w-full gap-[100px] max-lg:flex-col max-lg:items-center max-xl:gap-[40px]">
 
@@ -207,19 +226,19 @@
 
                 <div class="headin-1 w-full max-w-[467px] pt-[42px] ">
                     <p
-                        class="head-txt Poppins text-darkblu font-medium leading-128 text-[36px] xl:text-[45px] md:text-[40px] max-lg:text-center">
+                        class="head-txt font-Poppins text-darkblu font-medium leading-128 max-md:text-custom-34 text-custom-45 max-xl:text-custom-40 max-lg:text-center">
                         Perfect Solution for Small Businesses</p>
                     <p
-                        class="para-txt mt-[30px] Roboto text-lg font-normal leading-none text-lightblu sm:text-[21px] max-lg:text-center">
+                        class="para-txt mt-[30px] font-Roboto text-lg font-normal leading-none text-lightblu sm:text-custom-21 max-lg:text-center">
                         Pricing plans that fit like a glove.</p>
                     <div class="btn-box mt-[60px] mb-[90px] max-md:mt-8 max-md:mb-10
-                     flex flex-row flex-wrap gap-[30px] max-lg:justify-center">
+                     flex flex-row flex-wrap gap-5 max-lg:justify-center">
                         <button
-                            class="btn-2 cursor-pointer rounded-[60px] border border-mlu bg-mlu pt-[14px] px-[46px] pb-4 Roboto text-base font-medium leading-none text-white transition-all duration-[280ms] hover:bg-lightbackground hover:text-mlu">
+                            class="btn-2 cursor-pointer rounded-[60px] border border-mlu bg-mlu pt-[14px] px-[46px] pb-4 font-Roboto text-base font-medium leading-none text-white transition-all duration-[280ms] hover:bg-lightbackground hover:text-mlu">
                             Try it Free
                         </button>
                         <button
-                            class="btn-1 cursor-pointer rounded-[60px] border border-mlu bg-lightbackground pt-[14px] px-10 pb-4 Roboto text-base font-medium leading-none text-mlu transition-all duration-[280ms] hover:border-mlu hover:bg-mlu hover:text-white ">
+                            class="btn-1 cursor-pointer rounded-[60px] border border-mlu bg-lightbackground pt-[14px] px-10 pb-4 font-Roboto text-base font-medium leading-none text-mlu transition-all duration-[280ms] hover:border-mlu hover:bg-mlu hover:text-white ">
                             Get a Demo
                         </button>
                     </div>
@@ -229,9 +248,9 @@
                         <div
                             class="rating-box max-w-[431px] w-full flex gap-9 max-md:gap-6 items-start max-md:justify-center max-sm:flex-wrap ">
                             <img width="131" height="19" src="./assets/img/star.png" alt="star image">
-                            <p class="Roboto font-bold text-[18px] leading-162 text-rating max-sm:text-center">5,200
+                            <p class="font-Roboto font-bold text-lg leading-162 text-lightblu max-sm:text-center">5,200
                                 businesses <span
-                                    class="font-normal text-rating text-[18px] leading-162 max-sm:text-center">use
+                                    class="font-normal text-lightblu text-lg leading-162 max-sm:text-center">use
                                     ChatApp
                                     and they rate it
                                     as</span> 5-stars.</p>
@@ -243,36 +262,55 @@
     </section>
 
     <footer>
-        <div class="container max-w-[1162px] w-full mx-auto flex justify-between pt-[90px] pr-5 pl-5 max-lg:flex-wrap">
+        <div class="container max-w-[1162px] w-full mx-auto flex justify-between pt-[90px] pr-5 pl-5 max-lg:flex-wrap items-baseline"
+            max-lg:pt-20 max-md:pt-20>
             <div class="logoside max-w-[168px] w-full flex flex-col gap-[18px]">
-                <p class="loggo Poppins text-[26px] font-semibold leading-[115%] tracking-[-0.52px] text-mlu">
-                    chat
-                    <span class="loggo-spn font-extralight">app</span>
-                </p>
-                <p class="leading-162 Roboto font-normal text-[15px] text-rating">The last team chat you will ever need.
+                <a href="#">
+                    <p class="loggo font-Poppins text-custom-26 font-semibold leading-115 tracking-[-0.52px] text-mlu">
+                        chat
+                        <span class="loggo-spn font-extralight">app</span>
+                    </p>
+                </a>
+                <p class="leading-162 font-Roboto font-normal text-custom-15 text-lightblu">The last team chat you will
+                    ever
+                    need.
                 </p>
             </div>
-            <div class="otherside max-w-[766px] w-full grid grid-cols-4 max-md:grid-cols-2 max-lg:mt-8">
+            <div class="otherside max-w-[766px] w-full grid grid-cols-4 gap-7 max-md:grid-cols-2 max-lg:mt-8">
                 <!-- <div class="one flex justify-between w-full"> -->
                 <div>
-                    <p class="text-darkblu text-[18px] font-normal leading-162 Poppins mb-3">Help</p>
-                    <ul class="flex flex-col gap-5">
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Support</a></li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Knowledgebase</a>
+                    <p class="text-darkblu text-lg font-normal leading-162 font-Poppins mb-5">Help</p>
+                    <ul class="flex flex-col gap-3">
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162  before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-12" href="#">Support</a></li>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-24" href="#">Knowledgebase</a>
                         </li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Support</a></li>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-12" href="#">Support</a></li>
                     </ul>
                 </div>
                 <div>
-                    <p class="text-darkblu text-[18px] font-normal leading-162 Poppins mb-3">Features</p>
-                    <ul class="flex flex-col gap-5">
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Screen
+                    <p class="text-darkblu text-lg font-normal leading-162 font-Poppins mb-5">Features</p>
+                    <ul class="flex flex-col gap-3">
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-23" href="#">Screen
                                 Sharing</a></li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">iOS & Android
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-29" href="#">iOS & Android
                                 Apps</a></li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">File Sharing</a>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-18" href="#">File Sharing</a>
                         </li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">User
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-28" href="#">User
                                 Management</a></li>
                     </ul>
                 </div>
@@ -280,35 +318,46 @@
 
                 <!-- <div class="two flex justify-between w-full"> -->
                 <div>
-                    <p class="text-darkblu text-[18px] font-normal leading-162 Poppins mb-3">Company</p>
-                    <ul class="flex flex-col gap-5">
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">About Us</a></li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Careers</a>
+                    <p class="text-darkblu text-lg font-normal leading-162 font-Poppins mb-5">Company</p>
+                    <ul class="flex flex-col gap-3">
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-15" href="#">About Us</a></li>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-13" href="#">Careers</a>
                         </li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162" href="#">Contact Us</a>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-17" href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <p class="text-darkblu text-[18px] font-normal leading-162 Poppins mb-3">Contact Us</p>
-                    <ul class="flex flex-col gap-5">
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162"
-                                href="mailto:someone@example.com">info@chatapp.com</a></li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162"
-                                href="tel:+15551234567">1-800-200-300</a>
+                    <p class="text-darkblu text-lg font-normal leading-162 font-Poppins mb-5">Contact Us</p>
+                    <ul class="flex flex-col gap-3">
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-29" href="mailto:someone@example.com">info@chatapp.com</a></li>
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-22" href="tel:+15551234567">1-800-200-300</a>
                         </li>
-                        <li><a class="text-[13px] Roboto text-rating font-normal leading-162 max-w-[120px] w-full block"
-                                href="#">3500 Deer Creek Rd
+                        <li class="relative"><a class="text-custom-13 font-Roboto text-lightblu font-normal leading-162 before:absolute before:bottom-[-4px] before:left-0 before:h-[2px] before:w-0 before:cursor-pointer
+                                before:bg-lightblu before:content-[''] before:transition-all before:duration-300 before:ease-in
+                                hover:before:w-20 max-w-[120px] w-full block" href="#">3500 Deer Creek Rd
                                 Palo Alto, CA</a></li>
                     </ul>
                 </div>
                 <!-- </div> -->
             </div>
         </div>
-        <div class="max-w-[1162px] w-full mx-auto">
-            <p class="text-[13px] Roboto text-rating font-normal leading-162 mt-45 pb-[30px] pr-5 pl-5">© Copyright
-                ChatApp Inc.</p>
-        </div>
+
+        <p
+            class=" max-w-[1162px] w-full mx-auto text-custom-13 font-Roboto text-lightblu font-normal leading-162 mt-45 max-lg:mt-20 max-md:mt-[60px] pb-[30px] pr-5 pl-5">
+            © Copyright
+            ChatApp Inc.</p>
+
     </footer>
 
 
